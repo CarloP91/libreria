@@ -1,10 +1,10 @@
 h1 {
 
   font-size: 100px;
-  color: red;
+  color: black;
   position: absolute;
-  text-align: auto;
-  
+  left:35%;
+ top: 20px;
 }
 
 img {
@@ -14,13 +14,13 @@ img {
  left: 50px;*/
 }
 
-div {
+/*div {
 
   position: absolute;
     top: 0px;
 
 left:15%;
- padding: 25%;
+ padding: 25%;*/
 
 }
 
