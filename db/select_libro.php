@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
 } else {
 	echo "Nessun Risultato" 
 	."<br>"
-	.'<a href="#">VUOI INSERIRE UN NUOVO LIBRO?</a>';
+	.'<a href="../libro/inserisci_libro.php">VUOI INSERIRE UN NUOVO LIBRO?</a>';
 }
 $conn->close();
 ?>
