@@ -28,8 +28,15 @@
   <p>Resize the browser window to see the responsive effect.</p>
 </div> -->
 
-
+<div class="row">
+<div class="col"></div>
+<div class="col-5">
 <input type="text" id="myInput" onkeyup="srcfnt()" placeholder="Search for names..">
+</div>
+<div class="col">
+<button onclick="window.location.href='libro/inserisci_libro.php'">INSERISCI LIBRO</button>
+</div>
+</div>
 	<div id="hidesrc" style="display:none">
 
 <ul id="myUL">

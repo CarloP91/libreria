@@ -15,7 +15,6 @@ function srcfnt() {
         document.getElementById("hidesrc").style.display = 'block';
       } else {
         li[i].style.display = "none";
-        document.getElementById("hidesrc").innerHTML = Ciao;
       }
     }
   }
