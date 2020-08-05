@@ -5,12 +5,12 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="style/stylegenerico.css">
+	<link rel="stylesheet" type="text/css" href="../style/stylegenerico.css">
 </head>
 <body>
 
-
-	<img class="img-fluid" src="../img/narrative.jpg">
+<!-- 
+	<img class="img-fluid" src="../img/narrative.jpg"> -->
 
 
 	<h1> LIBRERIA </h1>
@@ -24,6 +24,5 @@
 	</div>
 	<?php include '../db/select_libro.php' ?>
 
-	<?php  ?>
 </body>
 </html>

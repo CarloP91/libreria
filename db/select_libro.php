@@ -19,11 +19,11 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
 	while($row = $result->fetch_assoc()) {
-		echo  $row["titolo"] ."<br>"
-		.$row["autore"] ."<br>"
-		.$row["codice"] ."<br>"
-		.$row["anno"] ."<br>"
-		.$row["descrizione"] ."<br>";
+		echo "<b>Titolo: </b>" .$row["titolo"] ."<br>"
+		."<b>Autore: </b>" .$row["autore"] ."<br>"
+		."<b>Codice Prodotto: </b>".$row["codice"] ."<br>"
+		."<b>Anno: </b>".$row["anno"] ."<br>"
+		."<b>Descrizione: </b>".$row["descrizione"] ."<br>";
 
 	}
 } else {
