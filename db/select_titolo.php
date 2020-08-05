@@ -4,6 +4,8 @@ $username = "root";
 $password = "";
 $dbname = "book_ccls";
 
+$src_arrive = $_GET[""]
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
