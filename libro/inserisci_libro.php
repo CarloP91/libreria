@@ -5,13 +5,6 @@
 </head>
 <body>
 
-	<form action="/action_page.php">
-		
-  		<label for="img">Select image:</label>
-  		<input type="file" id="img" name="img" accept="image/*">
-  		
-	</form>
-
    <form action="db/insert_db.php" method="GET"> 
 	
 		<label class="chiara">TITOLO:</label>
@@ -30,6 +23,8 @@
 		<textarea name="descrizione" value="descrizione"></textarea> 
 		<br>
 		<br>
+		<label>Inserisci Copertina: </label> <br>
+		<input type="file" name="ins_img" accept="image/*">
 		<input type="submit" name="submit" value="inserisci">
 
 	</form>
