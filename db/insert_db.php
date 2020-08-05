@@ -1,3 +1,4 @@
+
 <?php
 $servername = "localhost";
 $username = "root";
@@ -9,6 +10,7 @@ $autore = $_GET["autore"];
 $codice = $_GET["codice"];
 $descrizione = $_GET["descrizione"];
 $anno = $_GET["anno"];
+$ciao = "ciao";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
