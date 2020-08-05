@@ -1,8 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "book_ccls";
+
+require 'log.php';
 
  $src_arrive = $_GET["search"];
 

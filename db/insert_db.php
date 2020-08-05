@@ -1,9 +1,7 @@
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "book_ccls";
+
+require 'log.php';
 
 $titolo = $_GET["titolo"];
 $autore = $_GET["autore"];

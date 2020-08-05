@@ -3,7 +3,8 @@
 <head>
 	<title>libreria</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -15,6 +16,7 @@
       <input type="text" placeholder="libro, autore..." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
+    <div class="subsrc"><?php    include 'db/random_select_db.php'       ?></div> <!--  Perché funzioni, ci devono essere almeno 3 libri nel DB -->
   </div>
 </div>
 <div style="padding-left:16px">
