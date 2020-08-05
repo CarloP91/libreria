@@ -23,6 +23,7 @@
             <div class="col"></div>
         </div>
     </div>
+    poiuiyydfgh
 
     <form action="db/insert_db.php" method="GET"> 
 
