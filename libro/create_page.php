@@ -6,10 +6,7 @@ $pagename = 'prova';
 $newFileName = './'.$pagename.".php";
 $newFileContent = 
 '<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "book_ccls";
+require "../db/log.php";
 
 // $src_arrive = $_GET[""];
 

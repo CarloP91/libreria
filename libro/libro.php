@@ -23,8 +23,8 @@
 			</form>
 		</div>
 	</div> -->
-
-	<div><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<input type="text" id="myInput" onkeyup="srcfnt()" placeholder="Search for names..">
+	<div id="hidesrc" style="display:none">
 
 <ul id="myUL">
  <!--  <li><a href="#">Adele</a></li>
