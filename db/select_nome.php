@@ -1,60 +1,26 @@
-<?php 
-
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "testcinema";
-
-$order= "nome"; 
-$visual= "ASC"; 
-
-// $titolo = $GET_["titolo_srh"];
+$dbname = "book_ccls";
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM `book`";
-$result = mysqli_query($conn, $sql);
+$sql = "SELECT * FROM book";
+$result = $conn->query($sql);
 
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-  while($row = mysqli_fetch_assoc($result)) { ?>
-
-
-
-   <?php 
-
-
-   $row["titolo"];
-
-   echo $row["titolo"];
-
-
-
-
-
-   ?>
-
-
-
-<br><br>
-
-<?php 
-
-}
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo  $row["titolo"] ."<br>";
+  }
 } else {
   echo "0 results";
 }
-
-mysqli_close($conn);
+$conn->close();
 ?>
-
-<hr>
-
-
-
-
