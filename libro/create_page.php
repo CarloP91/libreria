@@ -4,7 +4,8 @@ error_reporting(E_ALL);
 $pagename = 'prova';
 
 $newFileName = './'.$pagename.".php";
-$newFileContent = '<?php
+$newFileContent = 
+'<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
