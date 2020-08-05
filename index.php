@@ -18,7 +18,7 @@
 	<h1> LIBRERIA </h1>
 <div class="topnav">
    <div class="search-container">
-    <form action="/action_page.php">
+    <form action="libro/libro.php" method="GET">
       <input type="text" placeholder="libro, autore..." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
@@ -30,6 +30,8 @@
   <p>Navigation bar with a search box and a submit button inside of it.</p>
   <p>Resize the browser window to see the responsive effect.</p>
 </div>
+
+
 
 
 

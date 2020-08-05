@@ -4,6 +4,6 @@
 	<title></title>
 </head>
 <body>
-	TITOLO:
+ 	<?php include '../db/select_libro.php' ?>
 </body>
 </html>
