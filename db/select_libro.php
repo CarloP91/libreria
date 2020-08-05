@@ -1,8 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "book_ccls";
+
+require 'log.php';
 
  $src_arrive = $_GET["search"];
 
@@ -19,17 +17,17 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
 	while($row = $result->fetch_assoc()) {
-		echo  $row["titolo"] ."<br>"
-		.$row["autore"] ."<br>"
-		.$row["codice"] ."<br>"
-		.$row["anno"] ."<br>"
-		.$row["descrizione"] ."<br>";
+		echo "<b>Titolo: </b>" .$row["titolo"] ."<br>"
+		."<b>Autore: </b>" .$row["autore"] ."<br>"
+		."<b>Codice Prodotto: </b>".$row["codice"] ."<br>"
+		."<b>Anno: </b>".$row["anno"] ."<br>"
+		."<b>Descrizione: </b>".$row["descrizione"] ."<br>";
 
 	}
 } else {
 	echo "Nessun Risultato" 
 	."<br>"
-	.'<a href="#">VUOI INSERIRE UN NUOVO LIBRO?</a>';
+	.'<a href="../libro/inserisci_libro.php">VUOI INSERIRE UN NUOVO LIBRO?</a>';
 }
 $conn->close();
 ?>

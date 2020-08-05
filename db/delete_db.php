@@ -1,9 +1,7 @@
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "book_ccls";
+
+require 'log.php';
 
 $id = 1;
 

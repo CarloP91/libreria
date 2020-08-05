@@ -9,8 +9,8 @@
 </head>
 <body>
 
-
-	<img class="img-fluid" src="../img/narrative.jpg">
+<!-- 
+	<img class="img-fluid" src="../img/narrative.jpg"> -->
 
 
 	<h1> LIBRERIA </h1>
@@ -29,6 +29,5 @@
 	</div>
 	<?php include '../db/select_libro.php' ?>
 
-	<?php  ?>
 </body>
 </html>
