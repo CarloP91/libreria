@@ -18,9 +18,10 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
 	while($row = $result->fetch_assoc()) {
-		$string = str_replace(' ', '', $row["titolo"]);
-		
 
+		$string = str_replace(' ', '', $row["titolo"]);
+		$string = strtolower($string);
+	
 		echo 
 		'<li><a href="libro/'.$string .'.php">' .$row["titolo"] .'</a></li> ';
 
