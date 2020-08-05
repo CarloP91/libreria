@@ -18,3 +18,5 @@ function srcfnt() {
       }
     }
   }
+
+  // Fa funzionare il search
