@@ -18,7 +18,7 @@
 	<h1> LIBRERIA </h1>
 <div class="topnav">
    <div class="search-container">
-    <form action="/action_page.php">
+    <form action="libro/libro.php" method="GET">
       <input type="text" placeholder="libro, autore..." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
