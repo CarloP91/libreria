@@ -1,52 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>libreria</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+	<title>libreria</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+/*body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;*/
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  position: absolute;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: absolute;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  position: absolute;
+
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+  position: absolute;
+
+}
+
+.topnav .search-container {
+  float: right;
+  position: absolute;
+  left: 30%;
+
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  position: absolute;
+  left: 25%;
+
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  position: absolute;
+
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+
 </head>
 
 <body>
 
-    <img class="img-fluid" src="img/narrative.jpg">
+	<img class="img-fluid" src="img/narrative.jpg">
 
-        <div class="search_form">
-<form class="media_search search_xl" action="/it/images/search/" method="get"><div><div class="dd_box menu" data-left="1"><span class="image_type" style="margin-right:2px"></span><i class="dropdown_arrow"></i></div><a href="/blog/posts/id-46/" target="_blank">Opzioni di ricerca →</a></div><input type="submit" value=" " class="loupe"><span><input class="q" type="text" name="q" value="" placeholder="Cerca immagini, immagini vettoriali e video" data-autofocus="" autocomplete="off"></span><div style="position:absolute;left:-9999px"><input type="text" name="hp" autocomplete="off" tabindex="-1" value=""><input type="hidden" name="order" value=""><input type="hidden" name="cat" value=""><input type="checkbox" name="orientation" value="horizontal"><input type="checkbox" name="orientation" value="vertical"><input type="hidden" name="min_width" value=""><input type="hidden" name="min_height" value=""><input type="checkbox" name="colors" value="transparent"><input type="checkbox" name="colors" value="grayscale"><input type="checkbox" name="colors" value="red"><input type="checkbox" name="colors" value="orange"><input type="checkbox" name="colors" value="yellow"><input type="checkbox" name="colors" value="green"><input type="checkbox" name="colors" value="turquoise"><input type="checkbox" name="colors" value="blue"><input type="checkbox" name="colors" value="lilac"><input type="checkbox" name="colors" value="pink"><input type="checkbox" name="colors" value="white"><input type="checkbox" name="colors" value="gray"><input type="checkbox" name="colors" value="black"><input type="checkbox" name="colors" value="brown"><input type="checkbox" name="animation" value="1"><input type="checkbox" name="slow_motion" value="1"><input type="checkbox" name="time_lapse" value="1"><input type="checkbox" name="resolution_4k" value="1"><input type="checkbox" name="resolution_hd" value="1"></div></div></form>
 
+	<h1> LIBRERIA </h1>
+<div class="topnav">
+   <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
 </div>
 
-      <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-3"></div>
-            <div class="col"></div>
-        </div>
-    </div>
+<div style="padding-left:16px">
+  <h2>Responsive Search Bar</h2>
+  <p>Navigation bar with a search box and a submit button inside of it.</p>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
 
 
-    <form action="db/insert_db.php" method="GET"> 
 
-        <label class="chiara">TITOLO: </label>
-        <input type="text" name="titolo" value="titolo" required>
-        <br>
-        <label>AUTORE: </label>
-        <input type="text" name="autore" value="autore" required>
-        <br>
-        <label>CODICE: </label>
-        <input type="number" name="codice" value="codice" required>
-        <br>
-        <label>ANNO: </label>
-        <input type="number" name="anno" value="anno" required>
-        <br>
-        <label>DESCRIZIONE: </label>
-        <textarea name="descrizione" value="descrizione"></textarea> 
-        <br>
-        <br>
-        <input type="submit" name="submit" value="salva">
+  <!--   <form action="db/insert_db.php" method="GET"> 
+	
+		<label class="chiara">TITOLO: </label>
+		<input type="text" name="titolo" value="titolo" required>
+		<br>
+		<label>AUTORE: </label>
+		<input type="text" name="autore" value="autore" required>
+		<br>
+		<label>CODICE: </label>
+		<input type="number" name="codice" value="codice" required>
+		<br>
+		<label>ANNO: </label>
+		<input type="number" name="anno" value="anno" required>
+		<br>
+		<label>DESCRIZIONE: </label>
+		<textarea name="descrizione" value="descrizione"></textarea> 
+		<br>
+		<br>
+		<input type="submit" name="submit" value="salva">
 
-    </form>
-
+	</form>
+-->
 
 </body>
 </html>
