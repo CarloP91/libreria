@@ -8,7 +8,7 @@ $dbname = "testcinema";
 $order= "nome"; 
 $visual= "ASC"; 
 
-$titolo = $GET_["titolo"]
+// $titolo = $GET_["titolo_srh"];
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -17,7 +17,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM `book` WHERE titolo = '$titolo'";
+$sql = "SELECT * FROM `book`";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -28,43 +28,16 @@ if (mysqli_num_rows($result) > 0) {
 
    <?php 
 
-   $id = $row["id"];
 
+   $row["titolo"];
 
-   if ($row["nome"] !="") {
-    $nome = '<strong><span style="color: orange">PRENOTATO</span></strong> A NOME: ' .$row["nome"];
-  } else $nome = "";
-
-
-  $posto = $row["posto"];
-  echo " - Posto: " 
-  . $posto 
-  . " Prezzo: " 
-  .$row["prezzo"]
-  ."€ "
-  ?> <span style="display: inline-block;" id="p1"></span>  
-
-  <?php 
-  if ($row["nome"] =="") { ?>
-
-    <?php echo '<strong><span style="color: green;">POSTO DISPONIBILE</span></strong>' ?>
-    
-    <form method="post" action="db/insert.php">
-     <input type="text" name="nome" placeholder="inserisci nome" required>
-     <input type="text" name="cognome" placeholder="inserisci nome" required>
-     <input type="hidden" name="posto" value="<?php echo $posto?>" >
-     <input type="submit" name="invia">
-   </form>
-
-   <?php 
- } else {
-  echo $nome ." " .$row["cognome"]; ?> <a href="db/delete_data.php?id=<?php echo $id ?>" >X</a>
-<?php       			}
+   echo $row["titolo"];
 
 
 
-?>     		
 
+
+   ?>
 
 
 
