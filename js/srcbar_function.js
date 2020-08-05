@@ -12,9 +12,10 @@ function srcfnt() {
       txtValue = a.textContent || a.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1 && document.getElementById("myInput").value != "") {
         li[i].style.display = "";
-        document.getElementById("hidesrc").style.display = 'block'
+        document.getElementById("hidesrc").style.display = 'block';
       } else {
         li[i].style.display = "none";
+        document.getElementById("hidesrc").innerHTML = Ciao;
       }
     }
   }
