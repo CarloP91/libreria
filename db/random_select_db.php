@@ -9,7 +9,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM book ORDER BY RAND() LIMIT 3";
+$sql = "SELECT DISTINCT * FROM book ORDER BY RAND() LIMIT 3";
 $result = $conn->query($sql);
 
 echo "<b>Alcuni dei nostri libri: </b>|";
