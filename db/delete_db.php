@@ -5,6 +5,8 @@ $username = "root";
 $password = "";
 $dbname = "book_ccls";
 
+$id = 1;
+
 // $titolo = $_GET["titolo"];
 // $autore = $_GET["autore"];
 // $codice = $_GET["codice"];
