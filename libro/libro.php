@@ -9,8 +9,14 @@
 <body>
 
 <?php
-require '../db/log.php';
-$src_arrive = $_GET["titolo"];
+
+if (isset($_GET["titolo"])) {
+	$src_arrive = $_GET["titolo"]; 
+
+	require '../db/log.php';
+
+
+
 // echo $src_arrive;
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -45,10 +51,8 @@ if ($result->num_rows > 0) {
 	echo "Nessun Risultato" 
 	."<br>"
 	.'<a href="../libro/inserisci_libro.php">VUOI INSERIRE UN NUOVO LIBRO?</a>';
-}
-$conn->close();
 
-?>
+	?>
 
 <div id="modform" style="display:none">
 <form action="../db/update_db.php" method="GET">
@@ -61,7 +65,17 @@ $conn->close();
 	<input type="submit" value="MODIFICA">
 </form>
 
-</div>
+</div> <?php 
+} 
+$conn->close();
+} else {
+	echo "Libro non disponibile";
+}
+
+
+ ?>
+
+
 
 </body>
 <script>
