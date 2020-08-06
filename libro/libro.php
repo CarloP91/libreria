@@ -3,10 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="../style/back.css">
+
+<title>Descrizione</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY7<!--  -->6TfkUoSX" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="../style/back.css">
+
 </head>
-<body>
+<body background="../img/narrative.jpg">
+	 <h1> DESCRIZIONE </h1>
+<font face="SansSerif" size="5" color="black" >
+
+<div class="descrizione">
 
 <?php
 
@@ -83,6 +92,8 @@ $conn->close();
 		document.getElementById("modform").style.display = 'block';
 	}
 </script>
+
+</div>
 </html>
 
 

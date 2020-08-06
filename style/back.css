@@ -1,8 +1,28 @@
 .undi{
     border: solid 1px;
+
 }
 
-.undi:hover{
+.undi:hover {
+	
+	  border: solid 1px;
       text-decoration: underline;
       color: red;
-};
+}
+
+
+  h1 {
+  
+  font-size: 100px;
+  color: black;
+  position: absolute;
+
+  left:35%;
+ top: 20px;
+
+ }
+
+ .descrizione{
+ 	  padding-left:  40%;
+ 	padding-top:  210px;
+ }

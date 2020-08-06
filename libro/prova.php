@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
-	
-	
+	<title>PROVA</title>
 
-</font>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY7<!--  -->6TfkUoSX" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" type="text/css" href="../style/prova.css">
 </head>
 <body background="../img/narrative.jpg">
-<font face="Verdana" size="5" color="black" >
-</body>
-</html>
-
-<?php 
-error_reporting(E_ALL);
-
-$pagename = 'prova';
-
-$newFileName = './'.$pagename.".php";
-$newFileContent = 
-'<?php
+	<h1>  PROVA </h1>
+<div class="contenitore">
+<div class="prova">
+<?php
 require "../db/log.php";
 
 // $src_arrive = $_GET[""];
@@ -49,11 +41,8 @@ if ($result->num_rows > 0) {
 	echo "0 results";
 }
 $conn->close();
-?>';
-
-if (file_put_contents($newFileName, $newFileContent) !== false) {
-    echo "File created (" . basename($newFileName) . ")";
-} else {
-    echo "Cannot create file (" . basename($newFileName) . ")";
-}
 ?>
+</div>
+</div>
+</body>
+</html>

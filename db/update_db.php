@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
+	
+	
+
+</font>
+</head>
+<body background="../img/narrative.jpg">
+<font face="Verdana" size="5" color="black" >
+</body>
+</html>
+
 <?php
 
 require '../db/log.php';
