@@ -29,6 +29,8 @@ if ($result->num_rows > 0) {
 		."<b>Codice Prodotto: </b>".$row["codice"] ."<br>"
 		."<b>Anno: </b>".$row["anno"] ."<br>"
 		."<b>Descrizione: </b>".$row["descrizione"] ."<br>";
+
+		echo '<a href="../db/delete_db.php?id='.$row["id"].'">Cancella Libro</a>';
 		
 	}
 } else {

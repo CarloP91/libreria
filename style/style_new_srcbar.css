@@ -1,4 +1,4 @@
- h1 {
+ /* h1 {
   
   font-size: 100px;
   color: black;
@@ -13,7 +13,7 @@ img {
   position: absolute;
   
   
-}
+} */
 
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -24,8 +24,8 @@ img {
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
-  position: absolute;
-  top: 200px;
+  /* position: absolute;
+  top: 200px; */
   
 }
 
@@ -34,7 +34,7 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  position: absolute;
+  /* position: absolute; */
   
   
 }
@@ -48,14 +48,14 @@ img {
   font-size: 18px; /* Increase the font-size */
   color: black; /* Add a black text color */
   display: block; /* Make it into a block element to fill the whole list */
-  position: absolute;
+  /* position: absolute; */
   
 }
 
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
-  position: absolute;
-  top: 200px;
+  /* position: absolute;
+  top: 200px; */
 }
 
 
