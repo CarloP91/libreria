@@ -6,10 +6,7 @@ $pagename = 'prova';
 $newFileName = './'.$pagename.".php";
 $newFileContent = 
 '<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "book_ccls";
+require "../db/log.php";
 
 // $src_arrive = $_GET[""];
 
@@ -27,9 +24,9 @@ if ($result->num_rows > 0) {
   // output data of each row
 	while($row = $result->fetch_assoc()) {
 		echo  $row["titolo"] ."<br>"
-		.$row["autore"] ."<br>";
-		.$row["codice"] ."<br>";
-		.$row["anno"] ."<br>";
+		.$row["autore"] ."<br>"
+		.$row["codice"] ."<br>"
+		.$row["anno"] ."<br>"
 		.$row["descrizione"] ."<br>";
 
 	}

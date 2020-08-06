@@ -2,7 +2,8 @@
 
 require 'log.php';
 
- $src_arrive = $_GET["search"];
+
+//  $src_arrive = "Harry Potter";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,17 +12,18 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM book WHERE titolo = '$src_arrive'";
+$sql = "SELECT * FROM book";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
 	while($row = $result->fetch_assoc()) {
-		echo "<b>Titolo: </b>" .$row["titolo"] ."<br>"
-		."<b>Autore: </b>" .$row["autore"] ."<br>"
-		."<b>Codice Prodotto: </b>".$row["codice"] ."<br>"
-		."<b>Anno: </b>".$row["anno"] ."<br>"
-		."<b>Descrizione: </b>".$row["descrizione"] ."<br>";
+
+		$string = str_replace(' ', '', $row["titolo"]);
+		$string = strtolower($string);
+	
+		echo 
+		'<li><a href="libro/libro.php?titolo=' .$row["titolo"] .'">' .$row["titolo"] .'</a></li> ';
 
 	}
 } else {
