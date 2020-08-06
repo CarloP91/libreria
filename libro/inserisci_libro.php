@@ -5,7 +5,11 @@
 </head>
 <body background="../img/narrative.jpg">
 
+
+   <form action="../db/insert_db.php" method="GET"> 
+
    <form action="insert_db.php" method="GET"> 
+
 	
 		<label class="chiara">TITOLO:</label>
 		<input type="text" name="titolo" value="titolo" required>

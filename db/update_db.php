@@ -34,8 +34,8 @@ if ($conn->connect_error) {
 $sql = "UPDATE `u0uq8tmsv20hwgnc`.`book` SET `titolo` = '$titolo', `autore` = '$autore', `codice` = '$codice', `descrizione` = '$desc', `anno` = '$anno'  WHERE (`id` = '$id');";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-    // header( "refresh:0;url=../index.php" );
+    echo "Aggiornamento Effettuato";
+     header( "refresh:3;url=../index.php" );
     // header("Location: ../prenotazione.php");
     
 } else {
