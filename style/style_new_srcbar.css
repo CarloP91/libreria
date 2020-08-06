@@ -13,7 +13,7 @@
 
 
  
-#row {
+.row {
 
   position: relative;
   
@@ -23,7 +23,7 @@
 /*top: 200px;*/
 }
 
-#col-5 {
+.col-5 {
 position: absolute;
   padding-top: 25%;
   left: 250px;

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body  background="img/narrative.jpg">
-
+  <!-- <img class="img-fluid" src="img/narrative.jpg"> -->
   <h1> LIBRERIA </h1>
 <!-- <div class="topnav">
    <div class="search-container">
@@ -19,7 +20,8 @@
       <input type="text" placeholder="libro, autore..." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-    
+    <div class="subsrc"><?php    include 'db/random_select_db.php'       ?></div>  Perché funzioni, ci devono essere almeno 3 libri nel DB
+  </div>
 </div>
 <div style="padding-left:16px">
   <h2>Responsive Search Bar</h2>
@@ -28,17 +30,11 @@
 </div> -->
 
 <div class="row">
-
+  
+<br>
 <div class="col-5">
 <input type="text" id="myInput" onkeyup="srcfnt()" placeholder="Search for names..">
-<<<<<<< HEAD
 
-=======
- <div class="subsrc"><?php    include 'db/random_select_db.php'       ?></div>  <!--Perché funzioni, ci devono essere almeno 3 libri nel DB -->
-  </div>
-</div>
-<div class="col">
->>>>>>> c6951d3c60cdf6979baee87f4d4fbfea2e3de082
 <button onclick="window.location.href='libro/inserisci_libro.php'">INSERISCI LIBRO</button>
 </div>
 </div>
@@ -50,3 +46,4 @@
 </div>
 </body>
 </html>
+

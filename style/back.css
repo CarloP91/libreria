@@ -12,10 +12,15 @@
   h1 {
   
   font-size: 100px;
-  color: black;
+  color: red;
   position: absolute;
 
   left:35%;
  top: 20px;
 
+ }
+
+ .descrizione{
+
+ 	padding-top:  200px;
  }
