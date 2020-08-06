@@ -10,8 +10,8 @@
   
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-  <img class="img-fluid" src="img/narrative.jpg">
+<body  background="img/narrative.jpg">
+  <!-- <img class="img-fluid" src="img/narrative.jpg"> -->
   <h1> LIBRERIA </h1>
 <!-- <div class="topnav">
    <div class="search-container">
