@@ -79,6 +79,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 } else {
 	echo "Libro non disponibile";
+	header( "refresh:3;url=../index.php" );
 }
 
 
