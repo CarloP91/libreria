@@ -41,7 +41,7 @@
 <div class="col-5">
 <input type="text" id="myInput" onkeyup="srcfnt()" placeholder="Search for names..">
 
-<button onclick="window.location.href='libro/inserisci_libro.php'">RICERCA LIBRO</button>
+<button onclick="window.location.href='libro/inserisci_libro.php'">INSERISCI LIBRO</button>
 
 
   <div id="hidesrc" style="display:none">
