@@ -3,7 +3,7 @@
 require 'log.php';
 
 
- $src_arrive = "Harry Potter";
+//  $src_arrive = "Harry Potter";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
 		$string = strtolower($string);
 	
 		echo 
-		'<li><a href="libro/'.$string .'.php">' .$row["titolo"] .'</a></li> ';
+		'<li><a href="libro/libro.php?titolo=' .$row["titolo"] .'">' .$row["titolo"] .'</a></li> ';
 
 	}
 } else {

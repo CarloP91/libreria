@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-
-<!-- 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous"> -->
-
-	<link rel="stylesheet" type="text/css" href="../style/style_new_srcbar.css">
-	<script src="../js/srcbar_function.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 </head>
 <body>
 
-<!-- 
-	<img class="img-fluid" src="../img/narrative.jpg"> -->
+<?php
+require '../db/log.php';
+$src_arrive = $_GET["titolo"];
+// echo $src_arrive;
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}
 
+$sql = "SELECT * FROM book WHERE titolo = '$src_arrive'";
+$result = $conn->query($sql);
 
-	<!-- <h1> LIBRERIA </h1>
-	<div class="topnav">
-		<div class="search-container">
-			<form action="libro/libro.php" method="GET">
-				<input type="text" placeholder="libro, autore..." name="search">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</form>
-		</div>
-	</div> -->
-<input type="text" id="myInput" onkeyup="srcfnt()" placeholder="Search for names..">
-	<div id="hidesrc" style="display:none">
-
-<ul id="myUL">
- <!--  <li><a href="#">Adele</a></li>
-  <li><a href="#">Agnes</a></li>
-
-  <li><a href="#">Billy</a></li>
-  <li><a href="#">Bob</a></li>
-
-  <li><a href="#">Calvin</a></li>
-  <li><a href="#">Christina</a></li>
-  <li><a href="#">Cindy</a></li>-->
-  <?php include '../db/select_libro_src.php'?>
-</ul>  
-</div>
+if ($result->num_rows > 0) {
+	// output data of each row
+	while($row = $result->fetch_assoc()) {
+		echo "<b>Titolo: </b>" .$row["titolo"] ."<br>"
+		."<b>Autore: </b>" .$row["autore"] ."<br>"
+		."<b>Codice Prodotto: </b>".$row["codice"] ."<br>"
+		."<b>Anno: </b>".$row["anno"] ."<br>"
+		."<b>Descrizione: </b>".$row["descrizione"] ."<br>";
 		
-	<?php include '../db/select_libro.php' ?>
+	}
+} else {
+	echo "Nessun Risultato" 
+	."<br>"
+	.'<a href="../libro/inserisci_libro.php">VUOI INSERIRE UN NUOVO LIBRO?</a>';
+}
+$conn->close();
+?>
 
 </body>
 </html>
+
+
+
+
+
