@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
 	
 		echo 
 		'<li><a href="libro/libro.php?titolo=' .$row["titolo"] .'">' .$row["titolo"] .'</a></li> ';
-
+		
 	}
 } else {
 	echo "Nessun Risultato" 
