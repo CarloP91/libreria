@@ -23,8 +23,8 @@
 		<textarea name="descrizione" value="descrizione"></textarea> 
 		<br>
 		<br>
-		<label>Inserisci Copertina: </label> <br>
-		<input type="file" name="ins_img" accept="image/*">
+		<!-- <label>Inserisci Copertina: </label> <br>
+		<input type="file" name="ins_img" accept="image/*"> -->
 		<input type="submit" name="submit" value="inserisci">
 
 	</form>
