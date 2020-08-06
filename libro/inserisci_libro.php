@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 </head>
-<body>
+<body background="../img/narrative.jpg">
 
    <form action="insert_db.php" method="GET"> 
 	

@@ -13,14 +13,8 @@
 </body>
 </html>
 
-<?php 
-error_reporting(E_ALL);
 
-$pagename = 'prova';
-
-$newFileName = './'.$pagename.".php";
-$newFileContent = 
-'<?php
+<?php
 require "../db/log.php";
 
 // $src_arrive = $_GET[""];
@@ -49,11 +43,4 @@ if ($result->num_rows > 0) {
 	echo "0 results";
 }
 $conn->close();
-?>';
-
-if (file_put_contents($newFileName, $newFileContent) !== false) {
-    echo "File created (" . basename($newFileName) . ")";
-} else {
-    echo "Cannot create file (" . basename($newFileName) . ")";
-}
 ?>
