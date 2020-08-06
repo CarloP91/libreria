@@ -31,18 +31,19 @@
 
 <div class="row">
   
-<br>
 <div class="col-5">
 <input type="text" id="myInput" onkeyup="srcfnt()" placeholder="Search for names..">
 
 <button onclick="window.location.href='libro/inserisci_libro.php'">INSERISCI LIBRO</button>
-</div>
-</div>
+
+
   <div id="hidesrc" style="display:none">
 
 <ul id="myUL">
 <?php include 'db/select_libro_src.php'?>
 </ul>  
+</div>
+</div>
 </div>
 </body>
 </html>
