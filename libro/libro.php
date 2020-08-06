@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Document</title>
+<title>Descrizione</title>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY7<!--  -->6TfkUoSX" crossorigin="anonymous">
 
@@ -12,7 +12,7 @@
 
 </head>
 <body background="../img/narrative.jpg">
-	 <h1> LIBRERIA </h1>
+	 <h1> DESCRIZIONE </h1>
 <font face="SansSerif" size="5" color="black" >
 
 <div class="descrizione">

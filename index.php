@@ -3,16 +3,23 @@
 <html>
 <head>
   <title>libreria</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY7<!--  -->6TfkUoSX" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
+  
   
   <link rel="stylesheet" type="text/css" href="style/style_new_srcbar.css">
+
   <script src="js/srcbar_function.js"></script>
   
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body  background="img/narrative.jpg">
   <!-- <img class="img-fluid" src="img/narrative.jpg"> -->
+  
+  
+ 
+
   <h1> LIBRERIA </h1>
 <!-- <div class="topnav">
    <div class="search-container">
@@ -34,7 +41,7 @@
 <div class="col-5">
 <input type="text" id="myInput" onkeyup="srcfnt()" placeholder="Search for names..">
 
-<button onclick="window.location.href='libro/inserisci_libro.php'">INSERISCI LIBRO</button>
+<button onclick="window.location.href='libro/inserisci_libro.php'">RICERCA LIBRO</button>
 
 
   <div id="hidesrc" style="display:none">
@@ -45,6 +52,7 @@
 </div>
 </div>
 </div>
+
 </body>
 </html>
 
