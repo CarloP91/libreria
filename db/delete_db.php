@@ -1,11 +1,9 @@
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "book_ccls";
 
-$id = 1;
+require 'log.php';
+
+$id = $_GET["id"];
 
 // $titolo = $_GET["titolo"];
 // $autore = $_GET["autore"];
@@ -24,7 +22,8 @@ if ($conn->connect_error) {
 $sql = "DELETE FROM book WHERE id= $id";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Record deleted successfully";
+  echo "Libro Cancellato";
+  header( "refresh:3;url=../index.php" );
 } else {
   echo "Error deleting record: " . $conn->error;
 }

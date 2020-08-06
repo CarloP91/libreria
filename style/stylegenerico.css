@@ -1,0 +1,15 @@
+h1 {
+
+  font-size: 100px;
+  color: black;
+  position: absolute;
+  left:35%;
+ top: 20px;
+}
+
+img {
+
+  position: absolute;
+/*top: 0px;
+ left: 50px;*/
+}
