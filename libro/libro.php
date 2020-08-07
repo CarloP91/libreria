@@ -46,7 +46,8 @@ if (isset($_GET["titolo"])) {
 			."<b>Anno: </b>".$row["anno"] ."<br>"
 			."<b>Descrizione: </b>".$row["descrizione"] ."<br>";
 			
-			echo '<a href="../db/delete_db.php?id='.$row["id"].'">Cancella Libro</a> <br>';
+			echo '<a class="undi" href="../db/delete_db.php?id='.$row["id"].'">Cancella Libro</a> <br>';
+			// echo '<a onclick="srDelete()" class="undi">Cancella Libro</a> <br>';
 			echo '<a onclick="openform()" class="undi">VUOI MODIFICARE IL LIBRO?</a> <br><br>';
 			
 			$id = $row["id"];
@@ -90,7 +91,7 @@ if (isset($_GET["titolo"])) {
 			."<b>Anno: </b>".$row["anno"] ."<br>"
 			."<b>Descrizione: </b>".$row["descrizione"] ."<br>";
 			
-			echo '<a href="../db/delete_db.php?id='.$row["id"].'">Cancella Libro</a> <br>';
+			echo '<a class="undi" href="../db/delete_db.php?id='.$row["id"].'">Cancella Libro</a> <br>';
 			echo '<a onclick="openform()" class="undi">VUOI MODIFICARE IL LIBRO?</a> <br><br>';
 			
 			$id = $row["id"];
@@ -106,13 +107,12 @@ if (isset($_GET["titolo"])) {
 		.'<a href="../libro/inserisci_libro.php">VUOI INSERIRE UN NUOVO LIBRO?</a>';
 		
 	} 
+	return $id;
 	$conn->close();
 } else {
 	echo "Libro non disponibile";
 	header( "refresh:3;url=../index.php" );
 }
-
-
 ?>
 <div id="modform" style="display:none">
 <form action="../db/update_db.php" method="GET">
@@ -131,8 +131,22 @@ if (isset($_GET["titolo"])) {
 
 <br>
 </body>
+
 <script>
+
+// function srDelete($id) {
+// 	var id = $id;
+// 	var action;
+// 	var it = window.confirm("Vuoi cancellare questo libro?");
+
+//  	if (r == true) {
+//      location.href = '../db/delete_db.php?id=' + id;
+//    } 
+
+//   console.log(id);
+
 function openform() {
+	
 	var x = document.getElementById("modform");
 	if (x.style.display === "none") {
 		x.style.display = "block";
@@ -144,6 +158,7 @@ function openform() {
 	} else {
 		x.style.display = "none";
 	}
+
 }
 </script>
 
