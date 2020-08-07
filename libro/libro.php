@@ -117,21 +117,33 @@ if (isset($_GET["titolo"])) {
 <div id="modform" style="display:none">
 <form action="../db/update_db.php" method="GET">
 <input type="hidden" name="id" value="<?php echo $id; ?>">
-<label>TITOLO: </label><input type="text" name="titolo" value="<?php echo $titolo; ?>"> <br>
-<label>AUTORE: </label><input type="text" name="autore" value="<?php echo $autore; ?>"> <br>
-<label>CODICE PRODOTTO: </label><input type="text" name="codice" value="<?php echo $codice; ?>"> <br>
-<label>ANNO PUBBLICAZIONE: </label><input type="text" name="anno" value="<?php echo $anno; ?>"> <br>
+<label>TITOLO: </label><br><input type="text" name="titolo" value="<?php echo $titolo; ?>"> <br>
+<label>AUTORE: </label><br><input type="text" name="autore" value="<?php echo $autore; ?>"> <br>
+<label>CODICE PRODOTTO: </label><br><input type="text" name="codice" value="<?php echo $codice; ?>"> <br>
+<label>ANNO PUBBLICAZIONE: </label><br><input type="text" name="anno" value="<?php echo $anno; ?>"> <br>
 <label>DESCRIZIONE: </label> <br> <textarea name="descrizione" id="" cols="30" rows="10"><?php echo $desc; ?></textarea> <br>
-<input type="submit" value="MODIFICA">
+<input type="submit" value="MODIFICA"> 
 </form>
-
+<br>
 </div>
 
 </div>
+
+<br>
 </body>
 <script>
 function openform() {
-	document.getElementById("modform").style.display = 'block';
+	var x = document.getElementById("modform");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+		x.style.background = "white";
+		x.style.width = "29%";
+		x.style.textAlign = "center";
+		x.style.fontSize = "15px";
+		x.style.border = "solid";
+	} else {
+		x.style.display = "none";
+	}
 }
 </script>
 
