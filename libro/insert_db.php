@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body background="../img/narrative.jpg">
-
-</body>
-</html>
 <?php
 
 require '../db/log.php';

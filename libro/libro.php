@@ -61,8 +61,15 @@ if ($result->num_rows > 0) {
 	."<br>"
 	.'<a href="../libro/inserisci_libro.php">VUOI INSERIRE UN NUOVO LIBRO?</a>';
 
-	?>
+} 
+$conn->close();
+} else {
+	echo "Libro non disponibile";
+	header( "refresh:3;url=../index.php" );
+}
 
+
+ ?>
 <div id="modform" style="display:none">
 <form action="../db/update_db.php" method="GET">
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
@@ -74,19 +81,9 @@ if ($result->num_rows > 0) {
 	<input type="submit" value="MODIFICA">
 </form>
 
-</div> <?php 
-} 
-$conn->close();
-} else {
-	echo "Libro non disponibile";
-	header( "refresh:3;url=../index.php" );
-}
+</div>
 
-
- ?>
-
-
-
+</div>
 </body>
 <script>
 	function openform() {
@@ -94,7 +91,7 @@ $conn->close();
 	}
 </script>
 
-</div>
+
 </html>
 
 
