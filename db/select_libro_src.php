@@ -13,20 +13,20 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT DISTINCT * FROM book";
+$sql = "SELECT DISTINCT titolo, autore FROM `book`";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
 	while($row = $result->fetch_assoc()) {
 
-		$string = str_replace(' ', '', $row["titolo"]);
-		$string = strtolower($string);
-	
+		// $string = str_replace(' ', '', $row["titolo"]);
+		// $string = strtolower($string);
+		
 		echo 
-		'<li><a href="libro/libro.php?titolo=' .$row["titolo"] .'">' .$row["titolo"] .'</a></li> ';
-		echo 
-		'<li><a href="libro/libro.php?autore=' .$row["autore"] .'">' .$row["autore"] .'</a></li> ';
+		'<li><a href="libro/libro.php?titolo=' .$row["titolo"] .'">' ."TITOLO: " .$row["titolo"] ." - AUTORE: " .$row["autore"] .'</a></li> ';
+		// echo 
+		// '<li><a href="libro/libro.php?autore=' .$row["autore"] .'">' .$row["autore"] .'</a></li> ';
 		
 	}
 } else {
