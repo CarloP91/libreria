@@ -1,22 +1,22 @@
   h1 {
+    
+    font-size: 100px;
+    color: black;
+    position: absolute;
+    
+    left: 40%;
+    top: 20px;
+    
+  }
+  .contenitore {
+    position: relative;
+  }
   
-  font-size: 100px;
-  color: black;
-  position: absolute;
-
-  left: 40%;
- top: 20px;
-
- }
- .contenitore {
-  position: relative;
- }
-
- .prova {
-
- position: absolute;
-  padding-top: 15%;
-  font-size: 150%;
-font-weight: bold;
- left: 40%;
- }
+  .prova {
+    
+    position: absolute;
+    padding-top: 15%;
+    font-size: 150%;
+    font-weight: bold;
+    left: 40%;
+  }

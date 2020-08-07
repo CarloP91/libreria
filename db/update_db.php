@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
-	
-	
-
-</font>
-</head>
-<body background="../img/narrative.jpg">
-<font face="Verdana" size="5" color="black" >
-</body>
-</html>
-
 <?php
 
 require '../db/log.php';
@@ -35,7 +20,7 @@ $sql = "UPDATE `u0uq8tmsv20hwgnc`.`book` SET `titolo` = '$titolo', `autore` = '$
 
 if ($conn->query($sql) === TRUE) {
     echo "Aggiornamento Effettuato";
-     header( "refresh:3;url=../index.php" );
+    header( "refresh:3;url=../index.php" );
     // header("Location: ../prenotazione.php");
     
 } else {

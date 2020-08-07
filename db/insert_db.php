@@ -19,13 +19,13 @@ if ($conn->connect_error) {
 }
 
 $sql = "INSERT INTO book (titolo, autore, codice, anno, descrizione)
-		VALUES ('$titolo', '$autore', '$codice', '$anno', '$descrizione')";
+VALUES ('$titolo', '$autore', '$codice', '$anno', '$descrizione')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Libro Inserito";
- header( "refresh:3;url=../index.php" );
-   	 // header("Location: ../index.php");
-
+    header( "refresh:3;url=../index.php" );
+    // header("Location: ../index.php");
+    
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

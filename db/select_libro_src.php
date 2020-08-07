@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
 		// $string = strtolower($string);
 		
 		echo 
-		'<li><a href="libro/libro.php?titolo=' .$row["titolo"] .'">' ."TITOLO: " .$row["titolo"] ." - AUTORE: " .$row["autore"] .'</a></li> ';
+		'<li><a href="libro/libro.php?titolo=' .$row["titolo"] .'">' ."<b>TITOLO: </b>" .$row["titolo"] ." - <b>AUTORE:</b> " .$row["autore"] .'</a></li> ';
 		// echo 
 		// '<li><a href="libro/libro.php?autore=' .$row["autore"] .'">' .$row["autore"] .'</a></li> ';
 		

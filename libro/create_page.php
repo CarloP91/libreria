@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
-	
-	
-
-</font>
-</head>
-<body background="../img/narrative.jpg">
-<font face="Verdana" size="5" color="black" >
-</body>
-</html>
-
 <?php 
 error_reporting(E_ALL);
 
@@ -36,14 +21,14 @@ $sql = "SELECT * FROM book";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-  // output data of each row
+	// output data of each row
 	while($row = $result->fetch_assoc()) {
 		echo  $row["titolo"] ."<br>"
 		.$row["autore"] ."<br>"
 		.$row["codice"] ."<br>"
 		.$row["anno"] ."<br>"
 		.$row["descrizione"] ."<br>";
-
+		
 	}
 } else {
 	echo "0 results";
@@ -52,8 +37,8 @@ $conn->close();
 ?>';
 
 if (file_put_contents($newFileName, $newFileContent) !== false) {
-    echo "File created (" . basename($newFileName) . ")";
+	echo "File created (" . basename($newFileName) . ")";
 } else {
-    echo "Cannot create file (" . basename($newFileName) . ")";
+	echo "Cannot create file (" . basename($newFileName) . ")";
 }
 ?>
