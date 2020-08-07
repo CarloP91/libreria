@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM book";
+$sql = "SELECT DISTINCT * FROM book";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -25,6 +25,8 @@ if ($result->num_rows > 0) {
 	
 		echo 
 		'<li><a href="libro/libro.php?titolo=' .$row["titolo"] .'">' .$row["titolo"] .'</a></li> ';
+		echo 
+		'<li><a href="libro/libro.php?autore=' .$row["autore"] .'">' .$row["autore"] .'</a></li> ';
 		
 	}
 } else {
